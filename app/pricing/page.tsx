@@ -189,7 +189,7 @@ export default function PricingPage() {
                 <div className="mt-auto space-y-3">
                   <Link
                     href="/book-a-call"
-                    className={`w-full px-4 py-3 rounded-xl text-sm font-semibold flex items-center justify-center gap-2 transition-all ${
+                    className={`w-full px-4 py-3 rounded-xl text-sm font-semibold flex items-center justify-center gap-2 transition-[color,border-color,box-shadow,background-color] duration-200 ${
                       plan.featured
                         ? "btn-primary"
                         : "border border-border hover:border-gold/40 text-text-secondary hover:text-text-primary"
@@ -297,7 +297,7 @@ export default function PricingPage() {
           <StaggerContainer className="space-y-4" staggerDelay={0.08}>
             {faqs.map((faq) => (
               <StaggerItem key={faq.q}>
-                <div className="card rounded-xl p-6 border-l-4 border-l-transparent hover:border-l-gold/50 transition-all duration-300">
+                <div className="card rounded-xl p-6 border-l-4 border-l-transparent hover:border-l-gold/50 transition-[border-color,box-shadow,transform] duration-300">
                   <h3 className="text-text-primary font-semibold mb-3 text-sm">{faq.q}</h3>
                   <p className="text-text-secondary text-sm leading-relaxed">{faq.a}</p>
                 </div>

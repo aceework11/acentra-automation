@@ -158,7 +158,7 @@ export default function Hero() {
           </Link>
           <Link
             href="#ai-audit"
-            className="flex items-center gap-2 text-sm text-white/70 hover:text-white transition-all px-5 py-4 border border-white/20 rounded-xl hover:border-gold/40 bg-white/5 backdrop-blur-sm hover:bg-white/10"
+            className="flex items-center gap-2 text-sm text-white/70 hover:text-white transition-[color,border-color,background-color] duration-200 px-5 py-4 border border-white/20 rounded-xl hover:border-gold/40 bg-white/5 backdrop-blur-sm hover:bg-white/10"
           >
             Try the AI Audit Live
             <ChevronRight size={14} className="text-gold" />
@@ -174,7 +174,7 @@ export default function Hero() {
             {trustLogos.map((tool, i) => (
               <motion.div
                 key={tool.name}
-                className="px-4 py-2 rounded-lg border border-white/10 bg-white/5 backdrop-blur-sm text-xs font-semibold hover:border-gold/40 hover:bg-white/10 transition-all duration-300 cursor-default"
+                className="px-4 py-2 rounded-lg border border-white/10 bg-white/5 backdrop-blur-sm text-xs font-semibold hover:border-gold/40 hover:bg-white/10 transition-[border-color,background-color] duration-300 cursor-default"
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.7 + i * 0.05 }}

@@ -23,7 +23,7 @@ export default function Nav() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-[background-color,backdrop-filter,box-shadow,border-color] duration-300 ${
         scrolled
           ? "bg-white/80 backdrop-blur-xl shadow-lg border-b border-border/50"
           : "bg-transparent"
@@ -58,7 +58,7 @@ export default function Nav() {
                 }`}
               >
                 {link.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gold transition-all duration-300 group-hover:w-full" />
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gold transition-[width] duration-300 group-hover:w-full" />
               </Link>
             ))}
           </nav>
@@ -67,7 +67,7 @@ export default function Nav() {
           <div className="hidden md:flex items-center gap-3">
             <Link
               href="/book-a-call"
-              className={`px-5 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 ${
+              className={`px-5 py-2.5 rounded-lg text-sm font-semibold transition-[background-color,border-color,box-shadow] duration-300 ${
                 scrolled
                   ? "btn-primary"
                   : "bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20"

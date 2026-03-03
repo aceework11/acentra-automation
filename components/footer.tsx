@@ -50,7 +50,7 @@ export default function Footer() {
                   <a
                     key={social.label}
                     href={social.href}
-                    className="w-8 h-8 rounded-lg border border-white/20 flex items-center justify-center text-white/50 hover:text-gold hover:border-gold/40 hover:shadow-glow-gold transition-all duration-300"
+                    className="w-8 h-8 rounded-lg border border-white/20 flex items-center justify-center text-white/50 hover:text-gold hover:border-gold/40 hover:shadow-glow-gold transition-[color,border-color,box-shadow] duration-300"
                     aria-label={social.label}
                   >
                     <social.icon size={14} />
@@ -73,7 +73,7 @@ export default function Footer() {
                         className="relative text-sm text-white/60 hover:text-gold transition-colors group"
                       >
                         {link.label}
-                        <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-gold transition-all duration-300 group-hover:w-full" />
+                        <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-gold transition-[width] duration-300 group-hover:w-full" />
                       </Link>
                     </li>
                   ))}

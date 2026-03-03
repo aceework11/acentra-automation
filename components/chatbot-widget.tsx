@@ -143,7 +143,7 @@ export default function ChatbotWidget() {
       {/* Toggle button with pulsing ring */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-4 right-4 sm:right-6 z-50 w-14 h-14 rounded-full bg-accent text-white flex items-center justify-center shadow-lg shadow-accent/20 hover:bg-accent-hover transition-all duration-200 hover:scale-105 group"
+        className="fixed bottom-4 right-4 sm:right-6 z-50 w-14 h-14 rounded-full bg-accent text-white flex items-center justify-center shadow-lg shadow-accent/20 hover:bg-accent-hover transition-[transform,background-color] duration-200 hover:scale-105 group"
         aria-label="Open chat"
       >
         {!isOpen && (

@@ -58,7 +58,7 @@ export default function VideoSection() {
                 />
                 <button
                   onClick={() => setIsPlaying(true)}
-                  className="relative w-20 h-20 rounded-full bg-white/90 flex items-center justify-center shadow-lg hover:bg-white hover:scale-105 transition-all duration-200"
+                  className="relative w-20 h-20 rounded-full bg-white/90 flex items-center justify-center shadow-lg hover:bg-white hover:scale-105 transition-[transform,background-color] duration-200"
                   aria-label="Play video"
                 >
                   <Play size={32} className="text-accent ml-1" fill="#1B2A4A" />
